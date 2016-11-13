@@ -7,23 +7,36 @@
 //
 
 import Foundation
+import CryptoSwift
 
 class AES256Manager {
     
     static let shared = AES256Manager()
     
-    private let key: String = "drowssapdrowssapdrowssapdrowssap"
+    private let key: String = "drowssapdrowssap"
     
-    private let iv:  String = "drowssapdrowssapdrowssapdrowssap"
+    private let iv:  String = "drowssapdrowssap"
     
-    init() { }
+    private init() { }
     
-    public func encrypt(text: String) -> String? {
-        do {
-            let aes = try AES(key: key, iv: iv)
-            let encripted = try aes.encrypt(text.utf8.map({$0}))
-        } catch {
-            print(error)
+    func encrypt(string: String) throws -> String? {
+        if let data = string.data(using: .utf8) {
+            let enc = try AES(key: key, iv: iv, blockMode:.CBC).encrypt(data.bytes)
+            let encData = NSData(bytes: enc, length: Int(enc.count))
+            let base64String: String = encData.base64EncodedString(options: NSData.Base64EncodingOptions(rawValue: 0));
+            let result = String(base64String)
+            return result
         }
+        return .none
+    }
+    
+    func decrypt(string: String) throws -> String? {
+        if let data = Data(base64Encoded: string, options: Data.Base64DecodingOptions(rawValue: 0)) {
+            let dec = try AES(key: key, iv: iv, blockMode:.CBC).decrypt(data.bytes)
+            let decData = NSData(bytes: dec, length: Int(dec.count))
+            let result = NSString(data: decData as Data, encoding: String.Encoding.utf8.rawValue)
+            return String(result!)
+        }
+        return .none
     }
 }

@@ -10,53 +10,65 @@ import UIKit
 
 class CPAES256ViewController: UIViewController {
     
+    @IBOutlet weak var randomizeBtn: UIButton!
+    
     @IBOutlet weak var inputTextView: UITextView!
 
     @IBOutlet weak var outputTextView: UITextView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        randomizeInput(randomizeBtn)
     }
     
     
     @IBAction func clearInput(_ sender: UIButton) {
         inputTextView.text = .none
+        encodeInput()
     }
     
     
     @IBAction func randomizeInput(_ sender: UIButton) {
         inputTextView.text = CPDummyManager.getRandomQuote()
+        encodeInput()
     }
     
     
     @IBAction func encodeInput(_ sender: UIButton) {
-        print("Prepare for encoding of:: \(inputTextView.text)")
+        encodeInput()
     }
 
     
     @IBAction func clearResult(_ sender: UIButton) {
         outputTextView.text = .none
+        decodeOutput()
     }
     
     
     @IBAction func decodeResult(_ sender: UIButton) {
-        print("Prepare for decoding of:: \(inputTextView.text)")
+        decodeOutput()
     }
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let segueID = segue.identifier else {
-//            print("Unable to perform segue because of no segue identifier")
-//            return
-//        }
-//        switch segueID {
-//        case "show-aes256-settings":
-//            print("Prepare data for AES 256 algorithm")
-//        default:
-//            return
-//        }
+    
+    
+    private func encodeInput() {
+        do {
+            if let encrypted = try AES256Manager.shared.encrypt(string: inputTextView.text) {
+                outputTextView.text = encrypted
+            }
+        } catch {
+            
+        }
+    }
+    
+    
+    private func decodeOutput() {
+        do {
+            if let decrypted = try AES256Manager.shared.decrypt(string: outputTextView.text) {
+                inputTextView.text = decrypted
+            }
+        } catch {
+            
+        }
     }
 }
