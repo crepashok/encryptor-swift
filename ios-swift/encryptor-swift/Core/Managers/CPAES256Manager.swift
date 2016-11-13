@@ -13,9 +13,11 @@ class AES256Manager {
     
     static let shared = AES256Manager()
     
-    private let key: String = "drowssapdrowssap"
+    public static let keyLength = 16
     
-    private let iv:  String = "drowssapdrowssap"
+    private let key: String = Configuration.aesKey
+    
+    private let iv:  String = Configuration.aesIV
     
     private init() { }
     

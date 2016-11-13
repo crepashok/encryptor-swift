@@ -1,12 +1,18 @@
 PODS:
   - CryptoSwift (0.6.6)
+  - KeychainSwift (7.0.0)
+  - SwiftyRSA (0.5.0)
 
 DEPENDENCIES:
   - CryptoSwift (~> 0.6)
+  - KeychainSwift (~> 7.0)
+  - SwiftyRSA (~> 0.5)
 
 SPEC CHECKSUMS:
   CryptoSwift: 88592381b73f36e192124539390a7c9bacda76af
+  KeychainSwift: b6947435dd78cc442c64a84ae648dd0e871cf448
+  SwiftyRSA: e73c44402451ad74c603cc87f7cd8a6d6f418138
 
-PODFILE CHECKSUM: 4ac48175e1f6ded0359dff4a7fe7e68f4c5f1f4b
+PODFILE CHECKSUM: 99283dadb8aecc98bc9fe88c1b369e032ab1419d
 
 COCOAPODS: 1.1.1

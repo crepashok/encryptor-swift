@@ -10,29 +10,43 @@
 		47EB43D8B30F1155DEAEFCC1 /* Pods_encryptor_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC928C9CE1130D1B6E54F8E8 /* Pods_encryptor_swift.framework */; };
 		5F127A251DD8BEF2009658A9 /* CPDummyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F127A241DD8BEF2009658A9 /* CPDummyManager.swift */; };
 		5F127A271DD8C56C009658A9 /* CPAES256Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F127A261DD8C56C009658A9 /* CPAES256Manager.swift */; };
+		5F127A291DD8E0A7009658A9 /* CPConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F127A281DD8E0A7009658A9 /* CPConfiguration.swift */; };
+		5F127A2C1DD8E39E009658A9 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F127A2B1DD8E39E009658A9 /* String.swift */; };
+		5FD705B41DD8EC8A00A87B86 /* CPRSA2048Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD705B31DD8EC8A00A87B86 /* CPRSA2048Manager.swift */; };
+		5FD705B61DD8EEB800A87B86 /* CPRSA2048ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD705B51DD8EEB800A87B86 /* CPRSA2048ViewController.swift */; };
+		5FD705B91DD8F06800A87B86 /* CPAES256SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD705B71DD8F06800A87B86 /* CPAES256SettingsViewController.swift */; };
+		5FD705BA1DD8F06800A87B86 /* CPAES256ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD705B81DD8F06800A87B86 /* CPAES256ViewController.swift */; };
+		5FD705C01DD8F71D00A87B86 /* private.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5FD705BC1DD8F71D00A87B86 /* private.pem */; };
+		5FD705C11DD8F71D00A87B86 /* public.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5FD705BD1DD8F71D00A87B86 /* public.pem */; };
+		5FD705C21DD8F71D00A87B86 /* test in Resources */ = {isa = PBXBuildFile; fileRef = 5FD705BE1DD8F71D00A87B86 /* test */; };
+		5FD705C31DD8F71D00A87B86 /* test.pub in Resources */ = {isa = PBXBuildFile; fileRef = 5FD705BF1DD8F71D00A87B86 /* test.pub */; };
 		5FD85FDB1DD786260077DA08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD85FCF1DD786260077DA08 /* AppDelegate.swift */; };
 		5FD85FDC1DD786260077DA08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FD85FD11DD786260077DA08 /* Assets.xcassets */; };
 		5FD85FDD1DD786260077DA08 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FD85FD21DD786260077DA08 /* Info.plist */; };
-		5FD85FDF1DD786260077DA08 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD85FD71DD786260077DA08 /* SecondViewController.swift */; };
 		5FD85FE01DD786260077DA08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD85FD91DD786260077DA08 /* LaunchScreen.storyboard */; };
 		5FD85FE11DD786260077DA08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD85FDA1DD786260077DA08 /* Main.storyboard */; };
-		5FD85FE31DD78C6C0077DA08 /* CPAES256ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD85FE21DD78C6C0077DA08 /* CPAES256ViewController.swift */; };
-		5FD85FE61DD790260077DA08 /* CPAES256SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD85FE51DD790260077DA08 /* CPAES256SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		173BD66BC3D5DB181B7CACF1 /* Pods-encryptor-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-encryptor-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-encryptor-swift/Pods-encryptor-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		5F127A241DD8BEF2009658A9 /* CPDummyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPDummyManager.swift; path = Core/Managers/CPDummyManager.swift; sourceTree = "<group>"; };
 		5F127A261DD8C56C009658A9 /* CPAES256Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPAES256Manager.swift; path = Core/Managers/CPAES256Manager.swift; sourceTree = "<group>"; };
+		5F127A281DD8E0A7009658A9 /* CPConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPConfiguration.swift; path = Core/Managers/CPConfiguration.swift; sourceTree = "<group>"; };
+		5F127A2B1DD8E39E009658A9 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = String.swift; path = Core/Extensions/String.swift; sourceTree = "<group>"; };
+		5FD705B31DD8EC8A00A87B86 /* CPRSA2048Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPRSA2048Manager.swift; path = Core/Managers/CPRSA2048Manager.swift; sourceTree = "<group>"; };
+		5FD705B51DD8EEB800A87B86 /* CPRSA2048ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPRSA2048ViewController.swift; path = "encryptor-swift/ViewControllers/RSA2048/CPRSA2048ViewController.swift"; sourceTree = SOURCE_ROOT; };
+		5FD705B71DD8F06800A87B86 /* CPAES256SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPAES256SettingsViewController.swift; path = "encryptor-swift/ViewControllers/AES256/CPAES256SettingsViewController.swift"; sourceTree = SOURCE_ROOT; };
+		5FD705B81DD8F06800A87B86 /* CPAES256ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPAES256ViewController.swift; path = "encryptor-swift/ViewControllers/AES256/CPAES256ViewController.swift"; sourceTree = SOURCE_ROOT; };
+		5FD705BC1DD8F71D00A87B86 /* private.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = private.pem; sourceTree = "<group>"; };
+		5FD705BD1DD8F71D00A87B86 /* public.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = public.pem; sourceTree = "<group>"; };
+		5FD705BE1DD8F71D00A87B86 /* test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test; sourceTree = "<group>"; };
+		5FD705BF1DD8F71D00A87B86 /* test.pub */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.pub; sourceTree = "<group>"; };
 		5FD85FB71DD785320077DA08 /* encryptor-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "encryptor-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD85FCF1DD786260077DA08 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FD85FD11DD786260077DA08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FD85FD21DD786260077DA08 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5FD85FD71DD786260077DA08 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		5FD85FD91DD786260077DA08 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FD85FDA1DD786260077DA08 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		5FD85FE21DD78C6C0077DA08 /* CPAES256ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPAES256ViewController.swift; sourceTree = "<group>"; };
-		5FD85FE51DD790260077DA08 /* CPAES256SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPAES256SettingsViewController.swift; path = AES256/CPAES256SettingsViewController.swift; sourceTree = "<group>"; };
 		6F56BCB86C0C1082CA37A969 /* Pods-encryptor-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-encryptor-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-encryptor-swift/Pods-encryptor-swift.release.xcconfig"; sourceTree = "<group>"; };
 		FC928C9CE1130D1B6E54F8E8 /* Pods_encryptor_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_encryptor_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -61,6 +75,7 @@
 		5F127A221DD8BEC5009658A9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				5F127A2A1DD8E380009658A9 /* Extensions */,
 				5F127A231DD8BECA009658A9 /* Managers */,
 			);
 			name = Core;
@@ -69,10 +84,40 @@
 		5F127A231DD8BECA009658A9 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				5F127A281DD8E0A7009658A9 /* CPConfiguration.swift */,
 				5F127A241DD8BEF2009658A9 /* CPDummyManager.swift */,
 				5F127A261DD8C56C009658A9 /* CPAES256Manager.swift */,
+				5FD705B31DD8EC8A00A87B86 /* CPRSA2048Manager.swift */,
 			);
 			name = Managers;
+			sourceTree = "<group>";
+		};
+		5F127A2A1DD8E380009658A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5F127A2B1DD8E39E009658A9 /* String.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		5FD705AE1DD8EA0000A87B86 /* RSA2048 */ = {
+			isa = PBXGroup;
+			children = (
+				5FD705B51DD8EEB800A87B86 /* CPRSA2048ViewController.swift */,
+			);
+			name = RSA2048;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5FD705BB1DD8F71D00A87B86 /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				5FD705BC1DD8F71D00A87B86 /* private.pem */,
+				5FD705BD1DD8F71D00A87B86 /* public.pem */,
+				5FD705BE1DD8F71D00A87B86 /* test */,
+				5FD705BF1DD8F71D00A87B86 /* test.pub */,
+			);
+			path = Keys;
 			sourceTree = "<group>";
 		};
 		5FD85FAE1DD785320077DA08 = {
@@ -97,9 +142,10 @@
 			isa = PBXGroup;
 			children = (
 				5F127A221DD8BEC5009658A9 /* Core */,
+				5FD705BB1DD8F71D00A87B86 /* Keys */,
 				5FD85FCE1DD786260077DA08 /* Application */,
 				5FD85FD01DD786260077DA08 /* Stores */,
-				5FD85FD31DD786260077DA08 /* UI */,
+				5FD85FD31DD786260077DA08 /* ViewControllers */,
 				5FD85FD81DD786260077DA08 /* Views */,
 			);
 			path = "encryptor-swift";
@@ -122,29 +168,14 @@
 			path = Stores;
 			sourceTree = "<group>";
 		};
-		5FD85FD31DD786260077DA08 /* UI */ = {
+		5FD85FD31DD786260077DA08 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5FD85FD41DD786260077DA08 /* Components */,
-				5FD85FD51DD786260077DA08 /* Controllers */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		5FD85FD41DD786260077DA08 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		5FD85FD51DD786260077DA08 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
+				5FD705AE1DD8EA0000A87B86 /* RSA2048 */,
 				5FD85FE41DD7900B0077DA08 /* AES256 */,
-				5FD85FD71DD786260077DA08 /* SecondViewController.swift */,
 			);
-			path = Controllers;
+			name = ViewControllers;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		5FD85FD81DD786260077DA08 /* Views */ = {
@@ -159,10 +190,11 @@
 		5FD85FE41DD7900B0077DA08 /* AES256 */ = {
 			isa = PBXGroup;
 			children = (
-				5FD85FE21DD78C6C0077DA08 /* CPAES256ViewController.swift */,
-				5FD85FE51DD790260077DA08 /* CPAES256SettingsViewController.swift */,
+				5FD705B71DD8F06800A87B86 /* CPAES256SettingsViewController.swift */,
+				5FD705B81DD8F06800A87B86 /* CPAES256ViewController.swift */,
 			);
 			name = AES256;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		BBB381B057B74FBCD7CDC61B /* Frameworks */ = {
@@ -237,7 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FD85FE01DD786260077DA08 /* LaunchScreen.storyboard in Resources */,
+				5FD705C21DD8F71D00A87B86 /* test in Resources */,
+				5FD705C01DD8F71D00A87B86 /* private.pem in Resources */,
 				5FD85FDD1DD786260077DA08 /* Info.plist in Resources */,
+				5FD705C11DD8F71D00A87B86 /* public.pem in Resources */,
+				5FD705C31DD8F71D00A87B86 /* test.pub in Resources */,
 				5FD85FDC1DD786260077DA08 /* Assets.xcassets in Resources */,
 				5FD85FE11DD786260077DA08 /* Main.storyboard in Resources */,
 			);
@@ -298,12 +334,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FD85FE61DD790260077DA08 /* CPAES256SettingsViewController.swift in Sources */,
-				5FD85FDF1DD786260077DA08 /* SecondViewController.swift in Sources */,
+				5FD705B91DD8F06800A87B86 /* CPAES256SettingsViewController.swift in Sources */,
+				5F127A291DD8E0A7009658A9 /* CPConfiguration.swift in Sources */,
 				5F127A271DD8C56C009658A9 /* CPAES256Manager.swift in Sources */,
+				5FD705BA1DD8F06800A87B86 /* CPAES256ViewController.swift in Sources */,
 				5FD85FDB1DD786260077DA08 /* AppDelegate.swift in Sources */,
-				5FD85FE31DD78C6C0077DA08 /* CPAES256ViewController.swift in Sources */,
+				5FD705B61DD8EEB800A87B86 /* CPRSA2048ViewController.swift in Sources */,
+				5F127A2C1DD8E39E009658A9 /* String.swift in Sources */,
 				5F127A251DD8BEF2009658A9 /* CPDummyManager.swift in Sources */,
+				5FD705B41DD8EC8A00A87B86 /* CPRSA2048Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
