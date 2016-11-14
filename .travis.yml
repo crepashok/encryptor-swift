@@ -4,4 +4,4 @@ script:
   - set -o pipefail
   - xcodebuild -version
   - xcodebuild -showsdks
-  - xcodebuild -workspace ios-swift/encryptor-swift.xcworkspace -scheme encryptor-swift -sdk iphonesimulator10.0 -configuration Release ONLY_ACTIVE_ARCH=NO build
+  - xcodebuild -workspace ios-swift/encryptor-swift.xcworkspace -scheme encryptor-swift -sdk iphonesimulator10.0 -configuration Debug ONLY_ACTIVE_ARCH=NO build
