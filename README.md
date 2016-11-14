@@ -1,5 +1,7 @@
 # encryptor-swift
 
+[![CI Status](http://img.shields.io/travis/crepashok/encryptor-swift.svg?style=flat)](https://travis-ci.org/crepashok/encryptor-swift)
+
 ## Features
 
 - [x] Generate random Quote ([Here you can find full list](http://www.brainyquote.com/quotes/topics/topic_funny.html?SPvm=1&vm=l))
