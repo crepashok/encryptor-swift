@@ -447,6 +447,7 @@
 			baseConfigurationReference = 173BD66BC3D5DB181B7CACF1 /* Pods-encryptor-swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/encryptor-swift/Stores/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
@@ -461,6 +462,7 @@
 			baseConfigurationReference = 6F56BCB86C0C1082CA37A969 /* Pods-encryptor-swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/encryptor-swift/Stores/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "name.cretsu.encryptor-swift";
