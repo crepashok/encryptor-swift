@@ -121,7 +121,7 @@ public final class AES: BlockCipher {
         }
 
         if (blockMode.options.contains(.InitializationVectorRequired) && self.iv.count != AES.blockSize) {
-            assert(false, "Block size and Initialization Vector must be the same length!")
+            //assert(false, "Block size and Initialization Vector must be the same length!")
             throw Error.invalidInitializationVector
         }
     }

@@ -19,7 +19,6 @@ class RSA2048Manager {
     
     private let rsa = SwiftyRSA()
 
-    
     private init() { }
     
     func encrypt(string: String) throws -> String? {

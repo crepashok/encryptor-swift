@@ -28,9 +28,9 @@ class Configuration {
     
     class var aesKey:String {
         get {
-            let stored = Configuration.shared.keychain.get(SettingKey.aesKey)
+            let stored = KeychainSwift().get(SettingKey.aesKey)
             if (stored?.characters.count != AES256Manager.keyLength) {
-                let random = String.random()
+                let random = String.random(length: AES256Manager.keyLength)
                 Configuration.shared.keychain.set(random, forKey: SettingKey.aesKey)
                 
                 return random
@@ -44,7 +44,7 @@ class Configuration {
         get {
             let stored = Configuration.shared.keychain.get(SettingKey.aesIV)
             
-            if (stored?.characters.count != AES256Manager.keyLength) {
+            if (stored == nil) {
                 let random = String.random()
                 Configuration.shared.keychain.set(random, forKey: SettingKey.aesIV)
                 

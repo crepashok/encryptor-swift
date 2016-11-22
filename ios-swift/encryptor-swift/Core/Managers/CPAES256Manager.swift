@@ -13,7 +13,7 @@ class AES256Manager {
     
     static let shared = AES256Manager()
     
-    public static let keyLength = 16
+    public static let keyLength = 32
     
     private let key: String = Configuration.aesKey
     
@@ -21,9 +21,11 @@ class AES256Manager {
     
     private init() { }
     
-    func encrypt(string: String) throws -> String? {
+    func encrypt(string: String, localKey: String? = nil, localIV: String? = nil) throws -> String? {
         if let data = string.data(using: .utf8) {
-            let enc = try AES(key: key, iv: iv, blockMode:.CBC).encrypt(data.bytes)
+            let localKey = localKey ?? key
+            let localIV = localIV ?? iv
+            let enc = try AES(key: localKey, iv: localIV, blockMode:.CBC).encrypt(data.bytes)
             let encData = NSData(bytes: enc, length: Int(enc.count))
             let base64String: String = encData.base64EncodedString(options: NSData.Base64EncodingOptions(rawValue: 0));
             let result = String(base64String)
@@ -32,12 +34,17 @@ class AES256Manager {
         return .none
     }
     
-    func decrypt(string: String) throws -> String? {
+    func decrypt(string: String, localKey: String? = nil, localIV: String? = nil) throws -> String? {
         if let data = Data(base64Encoded: string, options: Data.Base64DecodingOptions(rawValue: 0)) {
-            let dec = try AES(key: key, iv: iv, blockMode:.CBC).decrypt(data.bytes)
+            let localKey = localKey ?? key
+            let localIV = localIV ?? iv
+            let dec = try AES(key: localKey, iv: localIV, blockMode:.CBC).decrypt(data.bytes)
             let decData = NSData(bytes: dec, length: Int(dec.count))
-            let result = NSString(data: decData as Data, encoding: String.Encoding.utf8.rawValue)
-            return String(result!)
+            if let result = NSString(data: decData as Data, encoding: String.Encoding.utf8.rawValue) {
+                return String(result)
+            } else {
+                print("AES 256 decryption error!")
+            }
         }
         return .none
     }
