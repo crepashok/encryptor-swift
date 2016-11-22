@@ -1,12 +1,14 @@
 # encryptor-swift
 
+[![CI Status](http://img.shields.io/travis/crepashok/encryptor-swift.svg?style=flat)](https://travis-ci.org/crepashok/encryptor-swift)
+
 ## Features
 
 - [x] Generate random Quote ([Here you can find full list](http://www.brainyquote.com/quotes/topics/topic_funny.html?SPvm=1&vm=l))
-- [x] Encript generated Quote with AES 256 and RSA 2048
-- [x] For AES 256 was randomlly generated key and stored it in Keychain
-- [x] For AES 256 was developed settings page, where is displayed stored in Keychsin encryption key
-- [x] For RSA 2048 was generated from keychain public and private keys in project folder, all data where encrypted with them
+- [x] Encrypt generated Quote with AES 256 and RSA 2048
+- [x] For AES 256 was generated random key and stored it in keychain
+- [x] For AES 256 was developed settings page, where is displayed stored in keychain encryption key
+- [x] For RSA 2048 was generated public and private keys from keychain and result was putted in project folder, all data are encrypted with them
 
 
 ## Requirements

@@ -1,0 +1,11 @@
+language: objective-c
+osx_image: xcode8
+xcode_workspace: ios-swift/encryptor-swift.xcworkspace
+xcode_scheme: encryptor-swift
+xcode_sdk: iphonesimulator10.0
+
+script:
+  - set -o pipefail
+  - xcodebuild -version
+  - xcodebuild -showsdks
+  - xcodebuild -workspace ios-swift/encryptor-swift.xcworkspace -scheme encryptor-swift -sdk iphonesimulator10.0 -configuration Debug
